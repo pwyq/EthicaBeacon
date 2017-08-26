@@ -12,15 +12,19 @@ Author: Yanqing Wu
 
 Developed Date: May 2017 - July 2017
 
+Tested Devices: iPhone 5S, iPhone 6
+
 iOS version: iOS 10+
 
 Programming language: Swift 3
 
-Programming Platform: Xcode 8+
+Programming IDE: Xcode 8+
 
 
 ## Notes
 Due to the limit size of upload files, [EstimoteSDK][2] and [KontaktSDK][3] are not included in this repository.
+
+This app is only worked for those devices that equipped `BLE` (Bluetooth Low Energy, Bluetooth 4.0+)
 
 [1]: https://www.ethicadata.com/
 [2]: https://github.com/Estimote/iOS-SDK
