@@ -25,6 +25,8 @@ This app was developed at and for [Ethica Data][1]. The release of this demo-app
 
 - Due to the limit size of upload-able files, [EstimoteSDK][2] and [KontaktSDK][3] are not included in this repository.
 
+- The files in `ED_TEST` was well-organized in ordered `group`s in `Xcode`; however, the files lost organizations as they moved to my own laptop. Sorry :(
+
 - This app is only worked for those devices that equipped `BLE` (Bluetooth Low Energy, Bluetooth 4.0+)
 
 - This app is my first project with iOS+Swift+Xcode+Mac, meaning that there must exist a lot of naive code designs. If you think somewhere of the code need to be improved, feel free to `pull request`. Thank you ^_^
