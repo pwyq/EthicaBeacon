@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		271304421EE721E500E592E4 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271304411EE721E500E592E4 /* CoreBluetooth.framework */; };
+		271DBCA41EF80786009D54DD /* NSObject+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DBCA31EF80786009D54DD /* NSObject+Helpers.swift */; };
+		2721B1701F06968000B2F2B6 /* ProgramVC+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B16F1F06968000B2F2B6 /* ProgramVC+TableView.swift */; };
+		2721B1721F069E2A00B2F2B6 /* EstimoteNearable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B1711F069E2A00B2F2B6 /* EstimoteNearable.swift */; };
+		272A20791F0C0BAA008920F6 /* KontaktDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272A20781F0C0BAA008920F6 /* KontaktDevice.swift */; };
+		2737B8561EE9941D002C808F /* EddystoneScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2737B8551EE9941D002C808F /* EddystoneScanner.swift */; };
+		2737B8581EE994BF002C808F /* EddystoneDispatchTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2737B8571EE994BF002C808F /* EddystoneDispatchTimer.swift */; };
+		274936B91F0556B900715D96 /* UIView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274936B81F0556B900715D96 /* UIView+Helpers.swift */; };
+		275757031EE6F2B300295618 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275757021EE6F2B300295618 /* AppDelegate.swift */; };
+		275757051EE6F2B300295618 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275757041EE6F2B300295618 /* ViewController.swift */; };
+		275757081EE6F2B400295618 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 275757061EE6F2B400295618 /* Main.storyboard */; };
+		2757570A1EE6F2B400295618 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 275757091EE6F2B400295618 /* Assets.xcassets */; };
+		2757570D1EE6F2B400295618 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2757570B1EE6F2B400295618 /* LaunchScreen.storyboard */; };
+		275757191EE6F86800295618 /* ScanningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275757181EE6F86800295618 /* ScanningViewController.swift */; };
+		2757571B1EE6F89100295618 /* PeripheralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2757571A1EE6F89100295618 /* PeripheralViewController.swift */; };
+		275E53001EE9892A0095D1C8 /* EddystoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275E52FF1EE9892A0095D1C8 /* EddystoneViewController.swift */; };
+		275E75531F018B0A00135789 /* ModifyUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275E75521F018B0A00135789 /* ModifyUserDefaults.swift */; };
+		27609D6F1F0BDBEB00107F71 /* KontaktSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27609D6E1F0BDBEB00107F71 /* KontaktSDK.framework */; };
+		27609D701F0BDBEB00107F71 /* KontaktSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27609D6E1F0BDBEB00107F71 /* KontaktSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		27670CFC1EF973CC00A7F44C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27670CFB1EF973CC00A7F44C /* Images.xcassets */; };
+		276C74E21EEB364F00483ED4 /* EstimoteSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276C74E01EEB363400483ED4 /* EstimoteSDK.framework */; };
+		276C74E81EEB3A2300483ED4 /* Eddystone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276C74E71EEB3A2300483ED4 /* Eddystone.swift */; };
+		276C74EC1EEB3A9F00483ED4 /* SubmenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276C74EB1EEB3A9F00483ED4 /* SubmenuViewController.swift */; };
+		277649C61EF46B4C0001CD85 /* UITextField+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277649C51EF46B4C0001CD85 /* UITextField+Helpers.swift */; };
+		277649C81EF46CF30001CD85 /* UIViewController+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277649C71EF46CF30001CD85 /* UIViewController+Helpers.swift */; };
+		278BF8411EE9DFAA00DAD7ED /* iBeaconScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278BF8401EE9DFAA00DAD7ED /* iBeaconScanViewController.swift */; };
+		278BF8431EE9EA4C00DAD7ED /* allInOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278BF8421EE9EA4C00DAD7ED /* allInOneViewController.swift */; };
+		279448041F054BA500682053 /* ProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279448031F054BA500682053 /* ProgramViewController.swift */; };
+		279448061F054BE000682053 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279448051F054BE000682053 /* ScanViewController.swift */; };
+		27B07E7C1F0E7F6800D4D8C5 /* KontaktBeacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B07E7B1F0E7F6800D4D8C5 /* KontaktBeacon.swift */; };
+		27C1847F1F13BDC200EEAE3F /* String+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C1847E1F13BDC200EEAE3F /* String+Helpers.swift */; };
+		27CDADBF1F05A651002F700E /* ProgramVC+PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CDADBE1F05A651002F700E /* ProgramVC+PickerView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		27609D711F0BDBEB00107F71 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				27609D701F0BDBEB00107F71 /* KontaktSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		271304411EE721E500E592E4 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		271DBCA31EF80786009D54DD /* NSObject+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Helpers.swift"; sourceTree = "<group>"; };
+		2721B16F1F06968000B2F2B6 /* ProgramVC+TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProgramVC+TableView.swift"; sourceTree = "<group>"; };
+		2721B1711F069E2A00B2F2B6 /* EstimoteNearable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EstimoteNearable.swift; sourceTree = "<group>"; };
+		272A20781F0C0BAA008920F6 /* KontaktDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KontaktDevice.swift; sourceTree = "<group>"; };
+		2737B8551EE9941D002C808F /* EddystoneScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EddystoneScanner.swift; sourceTree = "<group>"; };
+		2737B8571EE994BF002C808F /* EddystoneDispatchTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EddystoneDispatchTimer.swift; sourceTree = "<group>"; };
+		274936B81F0556B900715D96 /* UIView+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Helpers.swift"; sourceTree = "<group>"; };
+		275756FF1EE6F2B300295618 /* ED_TEST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ED_TEST.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		275757021EE6F2B300295618 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		275757041EE6F2B300295618 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		275757071EE6F2B400295618 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		275757091EE6F2B400295618 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2757570C1EE6F2B400295618 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2757570E1EE6F2B400295618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		275757181EE6F86800295618 /* ScanningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanningViewController.swift; sourceTree = "<group>"; };
+		2757571A1EE6F89100295618 /* PeripheralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralViewController.swift; sourceTree = "<group>"; };
+		275E52FF1EE9892A0095D1C8 /* EddystoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EddystoneViewController.swift; sourceTree = "<group>"; };
+		275E75521F018B0A00135789 /* ModifyUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModifyUserDefaults.swift; sourceTree = "<group>"; };
+		27609D6E1F0BDBEB00107F71 /* KontaktSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KontaktSDK.framework; sourceTree = "<group>"; };
+		27670CFB1EF973CC00A7F44C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "../../../Downloads/iOS-SDK-master/LegacyExamples/Nearables/RangingExample-Swift/RangingExample-Swift/Images.xcassets"; sourceTree = "<group>"; };
+		276C74E01EEB363400483ED4 /* EstimoteSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EstimoteSDK.framework; sourceTree = "<group>"; };
+		276C74E31EEB369000483ED4 /* ObjCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
+		276C74E71EEB3A2300483ED4 /* Eddystone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Eddystone.swift; sourceTree = "<group>"; };
+		276C74EB1EEB3A9F00483ED4 /* SubmenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmenuViewController.swift; sourceTree = "<group>"; };
+		277649C51EF46B4C0001CD85 /* UITextField+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Helpers.swift"; sourceTree = "<group>"; };
+		277649C71EF46CF30001CD85 /* UIViewController+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Helpers.swift"; sourceTree = "<group>"; };
+		278BF8401EE9DFAA00DAD7ED /* iBeaconScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iBeaconScanViewController.swift; sourceTree = "<group>"; };
+		278BF8421EE9EA4C00DAD7ED /* allInOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = allInOneViewController.swift; sourceTree = "<group>"; };
+		279448031F054BA500682053 /* ProgramViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramViewController.swift; sourceTree = "<group>"; };
+		279448051F054BE000682053 /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		27B07E7B1F0E7F6800D4D8C5 /* KontaktBeacon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KontaktBeacon.swift; sourceTree = "<group>"; };
+		27C1847E1F13BDC200EEAE3F /* String+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Helpers.swift"; sourceTree = "<group>"; };
+		27CDADBE1F05A651002F700E /* ProgramVC+PickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProgramVC+PickerView.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		275756FC1EE6F2B300295618 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				271304421EE721E500E592E4 /* CoreBluetooth.framework in Frameworks */,
+				27609D6F1F0BDBEB00107F71 /* KontaktSDK.framework in Frameworks */,
+				276C74E21EEB364F00483ED4 /* EstimoteSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2704FEEE1F03F2DA008E4DA8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				277649C51EF46B4C0001CD85 /* UITextField+Helpers.swift */,
+				277649C71EF46CF30001CD85 /* UIViewController+Helpers.swift */,
+				271DBCA31EF80786009D54DD /* NSObject+Helpers.swift */,
+				275E75521F018B0A00135789 /* ModifyUserDefaults.swift */,
+				274936B81F0556B900715D96 /* UIView+Helpers.swift */,
+				27C1847E1F13BDC200EEAE3F /* String+Helpers.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		271304401EE721E500E592E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				276C74E01EEB363400483ED4 /* EstimoteSDK.framework */,
+				271304411EE721E500E592E4 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		274E30691F0BDDA300E4C1FF /* Kontakt */ = {
+			isa = PBXGroup;
+			children = (
+				272A20781F0C0BAA008920F6 /* KontaktDevice.swift */,
+				27B07E7B1F0E7F6800D4D8C5 /* KontaktBeacon.swift */,
+			);
+			name = Kontakt;
+			sourceTree = "<group>";
+		};
+		275756F61EE6F2B300295618 = {
+			isa = PBXGroup;
+			children = (
+				27609D6E1F0BDBEB00107F71 /* KontaktSDK.framework */,
+				275757011EE6F2B300295618 /* ED_TEST */,
+				275757001EE6F2B300295618 /* Products */,
+				271304401EE721E500E592E4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		275757001EE6F2B300295618 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				275756FF1EE6F2B300295618 /* ED_TEST.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		275757011EE6F2B300295618 /* ED_TEST */ = {
+			isa = PBXGroup;
+			children = (
+				276C74E31EEB369000483ED4 /* ObjCBridge.h */,
+				275757021EE6F2B300295618 /* AppDelegate.swift */,
+				275757041EE6F2B300295618 /* ViewController.swift */,
+				278BF8421EE9EA4C00DAD7ED /* allInOneViewController.swift */,
+				278BF8401EE9DFAA00DAD7ED /* iBeaconScanViewController.swift */,
+				276C74EF1EEB3CA100483ED4 /* Eddystone File */,
+				275E52FF1EE9892A0095D1C8 /* EddystoneViewController.swift */,
+				275757181EE6F86800295618 /* ScanningViewController.swift */,
+				2757571A1EE6F89100295618 /* PeripheralViewController.swift */,
+				276C74EB1EEB3A9F00483ED4 /* SubmenuViewController.swift */,
+				279448021F0545FB00682053 /* Submenu */,
+				2704FEEE1F03F2DA008E4DA8 /* Helpers */,
+				275757061EE6F2B400295618 /* Main.storyboard */,
+				275757091EE6F2B400295618 /* Assets.xcassets */,
+				27670CFB1EF973CC00A7F44C /* Images.xcassets */,
+				2757570B1EE6F2B400295618 /* LaunchScreen.storyboard */,
+				2757570E1EE6F2B400295618 /* Info.plist */,
+			);
+			path = ED_TEST;
+			sourceTree = "<group>";
+		};
+		276C74EF1EEB3CA100483ED4 /* Eddystone File */ = {
+			isa = PBXGroup;
+			children = (
+				276C74E71EEB3A2300483ED4 /* Eddystone.swift */,
+				2737B8571EE994BF002C808F /* EddystoneDispatchTimer.swift */,
+				2737B8551EE9941D002C808F /* EddystoneScanner.swift */,
+			);
+			name = "Eddystone File";
+			sourceTree = "<group>";
+		};
+		279448021F0545FB00682053 /* Submenu */ = {
+			isa = PBXGroup;
+			children = (
+				279448051F054BE000682053 /* ScanViewController.swift */,
+				279448031F054BA500682053 /* ProgramViewController.swift */,
+				27E58F811F06D5450007B53B /* EstimoteNearable */,
+				274E30691F0BDDA300E4C1FF /* Kontakt */,
+				27CDADBE1F05A651002F700E /* ProgramVC+PickerView.swift */,
+				2721B16F1F06968000B2F2B6 /* ProgramVC+TableView.swift */,
+			);
+			name = Submenu;
+			sourceTree = "<group>";
+		};
+		27E58F811F06D5450007B53B /* EstimoteNearable */ = {
+			isa = PBXGroup;
+			children = (
+				2721B1711F069E2A00B2F2B6 /* EstimoteNearable.swift */,
+			);
+			name = EstimoteNearable;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		275756FE1EE6F2B300295618 /* ED_TEST */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 275757111EE6F2B400295618 /* Build configuration list for PBXNativeTarget "ED_TEST" */;
+			buildPhases = (
+				275756FB1EE6F2B300295618 /* Sources */,
+				275756FC1EE6F2B300295618 /* Frameworks */,
+				275756FD1EE6F2B300295618 /* Resources */,
+				27609D711F0BDBEB00107F71 /* Embed Frameworks */,
+				274E30671F0BDC6000E4C1FF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ED_TEST;
+			productName = ED_TEST;
+			productReference = 275756FF1EE6F2B300295618 /* ED_TEST.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		275756F71EE6F2B300295618 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = EthicaData;
+				TargetAttributes = {
+					275756FE1EE6F2B300295618 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = P5A4R2TH6Q;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 275756FA1EE6F2B300295618 /* Build configuration list for PBXProject "ED_TEST" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 275756F61EE6F2B300295618;
+			productRefGroup = 275757001EE6F2B300295618 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				275756FE1EE6F2B300295618 /* ED_TEST */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		275756FD1EE6F2B300295618 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2757570D1EE6F2B400295618 /* LaunchScreen.storyboard in Resources */,
+				27670CFC1EF973CC00A7F44C /* Images.xcassets in Resources */,
+				2757570A1EE6F2B400295618 /* Assets.xcassets in Resources */,
+				275757081EE6F2B400295618 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		274E30671F0BDC6000E4C1FF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/KontaktSDK.framework/strip-frameworks.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		275756FB1EE6F2B300295618 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2737B8561EE9941D002C808F /* EddystoneScanner.swift in Sources */,
+				276C74E81EEB3A2300483ED4 /* Eddystone.swift in Sources */,
+				277649C81EF46CF30001CD85 /* UIViewController+Helpers.swift in Sources */,
+				27C1847F1F13BDC200EEAE3F /* String+Helpers.swift in Sources */,
+				27CDADBF1F05A651002F700E /* ProgramVC+PickerView.swift in Sources */,
+				2721B1721F069E2A00B2F2B6 /* EstimoteNearable.swift in Sources */,
+				2721B1701F06968000B2F2B6 /* ProgramVC+TableView.swift in Sources */,
+				272A20791F0C0BAA008920F6 /* KontaktDevice.swift in Sources */,
+				2757571B1EE6F89100295618 /* PeripheralViewController.swift in Sources */,
+				274936B91F0556B900715D96 /* UIView+Helpers.swift in Sources */,
+				275757051EE6F2B300295618 /* ViewController.swift in Sources */,
+				271DBCA41EF80786009D54DD /* NSObject+Helpers.swift in Sources */,
+				27B07E7C1F0E7F6800D4D8C5 /* KontaktBeacon.swift in Sources */,
+				275757191EE6F86800295618 /* ScanningViewController.swift in Sources */,
+				277649C61EF46B4C0001CD85 /* UITextField+Helpers.swift in Sources */,
+				275757031EE6F2B300295618 /* AppDelegate.swift in Sources */,
+				275E53001EE9892A0095D1C8 /* EddystoneViewController.swift in Sources */,
+				279448041F054BA500682053 /* ProgramViewController.swift in Sources */,
+				276C74EC1EEB3A9F00483ED4 /* SubmenuViewController.swift in Sources */,
+				278BF8411EE9DFAA00DAD7ED /* iBeaconScanViewController.swift in Sources */,
+				278BF8431EE9EA4C00DAD7ED /* allInOneViewController.swift in Sources */,
+				275E75531F018B0A00135789 /* ModifyUserDefaults.swift in Sources */,
+				2737B8581EE994BF002C808F /* EddystoneDispatchTimer.swift in Sources */,
+				279448061F054BE000682053 /* ScanViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		275757061EE6F2B400295618 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				275757071EE6F2B400295618 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2757570B1EE6F2B400295618 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2757570C1EE6F2B400295618 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2757570F1EE6F2B400295618 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		275757101EE6F2B400295618 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		275757121EE6F2B400295618 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P5A4R2TH6Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = ED_TEST/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ethicadata.ED-TEST";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/ObjCBridge.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		275757131EE6F2B400295618 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P5A4R2TH6Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = ED_TEST/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ethicadata.ED-TEST";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/ObjCBridge.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		275756FA1EE6F2B300295618 /* Build configuration list for PBXProject "ED_TEST" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2757570F1EE6F2B400295618 /* Debug */,
+				275757101EE6F2B400295618 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		275757111EE6F2B400295618 /* Build configuration list for PBXNativeTarget "ED_TEST" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				275757121EE6F2B400295618 /* Debug */,
+				275757131EE6F2B400295618 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 275756F71EE6F2B300295618 /* Project object */;
+}
